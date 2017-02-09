@@ -13,17 +13,11 @@
     tools:showIn="@layout/activity_main"
     tools:context="com.liveperson.jwang.v1_5_webview.MainActivity">
 
-    <TextView
-        android:id="@+id/hello_world"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!" />
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Message Us"
-        android:id="@+id/show_btn"
-        android:layout_below="@id/hello_world"/>
+        android:id="@+id/show_btn"/>
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

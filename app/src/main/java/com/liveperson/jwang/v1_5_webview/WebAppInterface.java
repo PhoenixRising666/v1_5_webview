@@ -55,5 +55,6 @@ public class WebAppInterface extends MainActivity{
     public void setAppValues(String appIDIn, String BrandIDIn) {
         appID=appIDIn;
         BrandID=BrandIDIn;
+    //lets you display to the user something has been done by showing a toast
     }
 }

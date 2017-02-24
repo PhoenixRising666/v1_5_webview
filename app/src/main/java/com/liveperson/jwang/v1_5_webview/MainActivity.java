@@ -74,20 +74,27 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        /*
+        This is all the important calls we used
+         */
+
+        //create webview and define page
         WebView myWebView = (WebView) findViewById(R.id.webview);
         myWebView.loadUrl("http://www.morganlemke.com/webview-test/");
-
         WebSettings webSettings = myWebView.getSettings();
         webSettings.setJavaScriptEnabled(true);
 
         //myWebView.addJavascriptInterface(new WebAppInterface(this), "Android");
 
+
         //new interface called
         WebAppInterface myInterface= new WebAppInterface(this);
         //name it
         myWebView.addJavascriptInterface(myInterface, "Android");
-        
+
         //pass the activity so it can be referenced
+        //still trying to understand this part as it does not function without but since pass by reference is a copy in java
+        //not sure if this is the most elegant solution
         myInterface.setAppValues(appID,BrandID);
         myInterface.setActivity(MainActivity.this);
         //pass default values

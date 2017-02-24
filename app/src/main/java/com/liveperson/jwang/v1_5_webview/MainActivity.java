@@ -90,7 +90,7 @@ public class MainActivity extends AppCompatActivity {
         //new interface called
         WebAppInterface myInterface= new WebAppInterface(this);
         //name it
-        myWebView.addJavascriptInterface(myInterface, "Android");
+        myWebView.addJavascriptInterface(myInterface, "android");
 
         //pass the activity so it can be referenced
         //still trying to understand this part as it does not function without but since pass by reference is a copy in java

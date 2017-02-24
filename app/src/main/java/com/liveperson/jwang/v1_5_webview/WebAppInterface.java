@@ -31,21 +31,25 @@ public class WebAppInterface extends MainActivity{
     }
 
     /** Show a toast from the web page */
-    @JavascriptInterface
+    //@JavascriptInterface
 
     //basically on click function
+    @JavascriptInterface
     public void startMessaging(){
         //Toast.makeText(mContext, "trying to call", Toast.LENGTH_SHORT).show();
         LivePerson.showConversation(A);
     }
     //allows you to change name but everything must be repassed
-    public void setName(String nameFirstIn,String nameLastIn){
+    @JavascriptInterface
+    public void setName(String nameFirstIn, String nameLastIn) {
         Toast.makeText(mContext, "Change Name", Toast.LENGTH_SHORT).show();
         LivePerson.setUserProfile(appID,nameFirstIn,nameLastIn,"858-926-8138");
     }
     //just test function to call
+    @JavascriptInterface
     public void toast(){
-        Toast.makeText(mContext, "Toast Test", Toast.LENGTH_SHORT).show();
+        //Toast.makeText(mContext, "Toast Test", Toast.LENGTH_SHORT).show();
+        System.out.println("test");
     }
     //lets you set base values
     public void setAppValues(String appIDIn, String BrandIDIn) {

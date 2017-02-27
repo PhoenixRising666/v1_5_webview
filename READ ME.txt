@@ -1,0 +1,17 @@
+Android Messaging Hybrid Webapp Interface.
+
+Creators Morgan Lemke Jimmy Wang
+mlemke@liveperson.com
+jwang@liveperson.com
+
+The purpose of this interface is to allow customers to use HTML and Javascript on a webpage to call our messaging SDK in 
+Android Native code.
+
+You will still need the following.
+-LivePerson Asyncronous Android SDK
+-WebappInterface.java file
+-access to any activity in order to pass it to the WebappInterface
+
+Why would you use this?
+-You use a hybrid app and mostly don't have access to the native code.
+-You want to be able to update look and feel of messaging buttons without having to do an app release

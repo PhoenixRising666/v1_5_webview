@@ -57,11 +57,11 @@ public class RegistrationIntentService extends IntentService {
                 // are local.
                 // [START get_token]
                 InstanceID instanceID = InstanceID.getInstance(this);
-                String token = instanceID.getToken("987654321012", GoogleCloudMessaging.INSTANCE_ID_SCOPE); // 1st Param is your Google Sender ID
+                String token = instanceID.getToken("253435721948", GoogleCloudMessaging.INSTANCE_ID_SCOPE); // 1st Param is your Google Sender ID
                 // [END get_token]
                 Log.i(TAG, "GCM Registration Token: " + token);
 
-                LivePerson.registerLPPusher("3148809", "com.liveperson.jwang.v1_5_webview", token);
+                LivePerson.registerLPPusher("13532285", "com.liveperson.jwang.v1_5_webview", token);
 
                 // You should store a boolean that indicates whether the generated token has been
                 // sent to your server. If the boolean is false, send the token to your server,

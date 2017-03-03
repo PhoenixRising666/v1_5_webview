@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
         {
             @Override
             public void onInitSucceed(){
-                LivePerson.setUserProfile(appID, "Dr. Mister", "Strange maybe", "I have come to bargin");
+                LivePerson.setUserProfile(appID, "Default First", "Default Last", "8675309");
                 Intent intent = new Intent(MainActivity.this, RegistrationIntentService.class);
                 startService(intent);
             }

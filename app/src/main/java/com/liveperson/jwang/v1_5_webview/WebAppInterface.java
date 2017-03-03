@@ -61,6 +61,7 @@ public class WebAppInterface extends MainActivity{
     //allows you to change name but everything must be repassed
     @JavascriptInterface
     public void setName(String nameFirstIn, String nameLastIn) {
+        Toast.makeText(mContext, "Toast Test", Toast.LENGTH_SHORT).show();
         nameFirst=nameFirstIn;
         nameLast=nameLastIn;
         LivePerson.setUserProfile(appID,nameFirstIn,nameLastIn, phone);
